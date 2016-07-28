@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Book from './Book';
+import BooksList from './BooksList';
 
 class App extends Component {
   render() {
-    const book = new Book();
-
     return (
       <div className="App">
         <div className="App-header">
@@ -15,7 +13,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <div className="App-intro">
-          <pre>{JSON.stringify(book, null, 2)}</pre>
+          <BooksList/>
         </div>
       </div>
     );

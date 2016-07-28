@@ -1,8 +1,11 @@
+import uuid from 'uuid';
 import Chance from 'chance';
 
 class Book {
   constructor() {
     const chance = new Chance();
+
+    this.id = uuid.v4();
 
     this.title = chance.n(chance.word, chance.natural({min: 2, max: 4}))
       .map(a => a.charAt(0).toUpperCase() + a.substr(1))
