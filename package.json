@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.1.0"
+    "react-scripts": "0.9.5"
   },
   "dependencies": {
     "chance": "^1.0.4",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
-    "uuid": "^2.0.2"
+    "uuid": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
